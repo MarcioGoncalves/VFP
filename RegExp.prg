@@ -15,9 +15,9 @@
 * DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-LPARAMETERS tcTexto AS String, tcPadrao AS String, tlDesconsiderarEspacos AS Boolean
+LPARAMETERS tcTexto AS String, tcPadrao AS String, tlDesconsiderarEspacosADireita AS Boolean
 LOCAL lcPadrao AS String, lcTexto AS String
-IF m.tlDesconsiderarEspacos
+IF m.tlDesconsiderarEspacosADireita
 	lcTexto = ALLTRIM(m.tcTexto)
 ELSE
 	lcTexto = m.tcTexto
