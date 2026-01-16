@@ -15,10 +15,10 @@
 * DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-* *obs01* - 17/04/2006 - M·rcio GonÁalves - CorreÁ„o erro de lÛgica
-* *obs02* - 30/01/2007 - Fl·vio Almeida - CorreÁ„o erro de lÛgica
-* *obs03* - 03/04/2008 - Fl·vio Almeida - CorreÁ„o erro de lÛgica
-* *obs04* - 14/05/2008 - Fl·vio Almeida - CorreÁ„o erro de lÛgica
+* *obs01* - 17/04/2006 - M√°rcio Gon√ßalves - Corre√ß√£o erro de l√≥gica
+* *obs02* - 30/01/2007 - Fl√°vio Almeida - Corre√ß√£o erro de l√≥gica
+* *obs03* - 03/04/2008 - Fl√°vio Almeida - Corre√ß√£o erro de l√≥gica
+* *obs04* - 14/05/2008 - Fl√°vio Almeida - Corre√ß√£o erro de l√≥gica
 
 LPARAMETERS tElementoProcurado, tConjunto
 DO CASE
@@ -39,7 +39,7 @@ IF UPPER(m.lcConjunto) = 'DIF:'		&& DIF: = diferente de ...
 	lcInversor = 'NOT'	&& inverte o resultado
 	lcConjuntoOriginal = SUBSTR(m.lcConjunto, 5)
 ELSE
-	lcInversor = '' 		&& n„o inverte o resultado
+	lcInversor = '' 		&& n√£o inverte o resultado
 	lcConjuntoOriginal = m.lcConjunto
 ENDIF
 llResposta = .F.
@@ -73,7 +73,7 @@ IF NOT m.llResposta
 		Do While m.lnPosPontoVirgula # 0 And m.lnPosPontoVirgula < m.lnPosHifen
 			lcConjunto = Substr(m.lcConjunto, m.lnPosPontoVirgula + 1)
 			lnPosPontoVirgula = At(';', m.lcConjunto) && obs02
-			lnPosHifen = At('-', m.lcConjunto) && obs04 sÛ essa linha foi adicionada para a obs04
+			lnPosHifen = At('-', m.lcConjunto) && obs04 s√≥ essa linha foi adicionada para a obs04
 		Enddo
 		lnPosHifen = At('-', m.lcConjunto)
 		lcInicio = Left(m.lcConjunto, m.lnPosHifen - 1)
