@@ -160,22 +160,22 @@ DEFINE CLASS Contido_Test as FxuTestCase OF FxuTestCase.prg
 	ENDFUNC 
 
 	**********************************************
-	FUNCTION NãoContidoEmUmValorPontual
+	FUNCTION NÃ£oContidoEmUmValorPontual
 		This.AssertTrue(NOT Contido('11100', '11200'), 'Falha')
 	ENDFUNC 
 
 	**********************************************
-	FUNCTION NãoContidoEmUmValorPontualComDif
+	FUNCTION NÃ£oContidoEmUmValorPontualComDif
 		This.AssertTrue(NOT Contido('11100', 'DIF: 11100'), 'Falha')
 	ENDFUNC 
 
 	**********************************************
-	FUNCTION NãoContidoEmUmValorEmBranco
+	FUNCTION NÃ£oContidoEmUmValorEmBranco
 		This.AssertTrue(NOT Contido('11100', ''), 'Falha')
 	ENDFUNC 
 
 	**********************************************
-	FUNCTION NãoContidoEmUmValorPontualSeProcuradoEmBranco
+	FUNCTION NÃ£oContidoEmUmValorPontualSeProcuradoEmBranco
 		This.AssertTrue(NOT Contido('', '10000'), 'Falha')
 	ENDFUNC 
 
@@ -185,7 +185,7 @@ DEFINE CLASS Contido_Test as FxuTestCase OF FxuTestCase.prg
 	ENDFUNC 
 
 	**********************************************
-	FUNCTION NãoContidoEmUmValorPontualSeProcuradoComTamanhoDiferente
+	FUNCTION NÃ£oContidoEmUmValorPontualSeProcuradoComTamanhoDiferente
 		This.AssertTrue(NOT Contido('10', '10000'), 'Falha')
 	ENDFUNC 
 
@@ -210,12 +210,12 @@ DEFINE CLASS Contido_Test as FxuTestCase OF FxuTestCase.prg
 	ENDFUNC 
 
 	**********************************************
-	FUNCTION NãoContidoEmValoresPontuais
+	FUNCTION NÃ£oContidoEmValoresPontuais
 		This.AssertTrue(NOT Contido('11100', '10000;11200'), 'Falha')
 	ENDFUNC 
 
 	**********************************************
-	FUNCTION NãoContidoEmValoresPontuaisComDif
+	FUNCTION NÃ£oContidoEmValoresPontuaisComDif
 		This.AssertTrue(NOT Contido('11100', 'DIF: 11100;11200'), 'Falha')
 	ENDFUNC 
 
@@ -235,17 +235,17 @@ DEFINE CLASS Contido_Test as FxuTestCase OF FxuTestCase.prg
 	ENDFUNC 
 
 	**********************************************
-	FUNCTION NãoContidoEmUmaFaixaDeValores
+	FUNCTION NÃ£oContidoEmUmaFaixaDeValores
 		This.AssertTrue(NOT Contido('21100', '10000-19000'), 'Falha')
 	ENDFUNC 
 
 	**********************************************
-	FUNCTION NãoContidoEmUmaFaixaDeValoresComDif
+	FUNCTION NÃ£oContidoEmUmaFaixaDeValoresComDif
 		This.AssertTrue(NOT Contido('21100', 'DIF: 20000-29000'), 'Falha')
 	ENDFUNC 
 
 	**********************************************
-	FUNCTION NãoContidoEmUmaFaixaDeValoresSeProcuradoEmBranco
+	FUNCTION NÃ£oContidoEmUmaFaixaDeValoresSeProcuradoEmBranco
 		This.AssertTrue(NOT Contido('', '10000-19000'), 'Falha')
 	ENDFUNC 
 
@@ -260,7 +260,7 @@ DEFINE CLASS Contido_Test as FxuTestCase OF FxuTestCase.prg
 	ENDFUNC 
 
 	**********************************************
-	FUNCTION NãoContidoEmUmaFaixaDeValoresSeProcuradoComTamanhoDiferente
+	FUNCTION NÃ£oContidoEmUmaFaixaDeValoresSeProcuradoComTamanhoDiferente
 		This.AssertTrue(NOT Contido('11', '10000-19000'), 'Falha')
 	ENDFUNC 
 
@@ -280,12 +280,12 @@ DEFINE CLASS Contido_Test as FxuTestCase OF FxuTestCase.prg
 	ENDFUNC 
 
 	**********************************************
-	FUNCTION NãoContidoEmValoresPontuaisMescladosComFaixasDeValores
+	FUNCTION NÃ£oContidoEmValoresPontuaisMescladosComFaixasDeValores
 		This.AssertTrue(NOT Contido('21200', '00000;10000-19000;21100;30000-39999'), 'Falha')
 	ENDFUNC 
 
 	**********************************************
-	FUNCTION NãoContidoEmValoresPontuaisMescladosComFaixasDeValoresComDif
+	FUNCTION NÃ£oContidoEmValoresPontuaisMescladosComFaixasDeValoresComDif
 		This.AssertTrue(NOT Contido('21200', 'DIF: 00000;10000-19000;21200;30000-39999'), 'Falha')
 	ENDFUNC 
 
